@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="page1">
+            <div class="heading">
+                <h1>Todo List</h1>
+                <button class="create">create task</button>
+            </div>
+            <div class="pop-up">
+                <div class="popup-head">
+                    <h2>create task</h2>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="input-details">
+                    <label for="name">Task Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="popup-btn">
+                    <button class="add">create</button>
+                    <button class="cancel">cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="page2">
+            <div class="task-info all-task">
+                <h2>all tasks</h2>
+                <div class="task-details">
+                    <ul class="list-container"></ul>
+                </div>
+            </div>
+
+
+
+            <div class="task-info process">
+                <h2>In progress</h2>
+                <div class="task-details">
+                    <ul class="in-progress"></ul>
+                </div>
+            </div>
+
+
+
+            <div class="task-info completed">
+                <h2>completed</h2>
+                <div class="task-details">
+                    <ul class="in-complete"></ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
